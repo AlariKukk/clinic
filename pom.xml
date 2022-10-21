@@ -50,5 +50,8 @@
             </plugins>
         </pluginManagement>
     </build>
+    <scm>
+        <developerConnection>scm:git:https://github.com/AlariKukk/pet-clinic-fin.git</developerConnection>
+    </scm>
 
 </project>
