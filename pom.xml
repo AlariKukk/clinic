@@ -15,7 +15,7 @@
     </parent>
     <groupId>com.clinic</groupId>
     <artifactId>clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>clinic</name>
     <description>clinic</description>
     <properties>
@@ -52,7 +52,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/AlariKukk/pet-clinic-fin.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>clinic-0.0.2</tag>
   </scm>
 
 </project>
