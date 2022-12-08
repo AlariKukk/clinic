@@ -2,6 +2,9 @@ package com.clinic.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity {
@@ -15,6 +18,9 @@ public class Pet extends BaseEntity {
     private Owner owner;
     @Column(name = "birthDate")
     private LocalDate birthDate;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visits = new HashSet<>();//good habit is to initialize that to new HashSet so that will never be null so if when we do a get on it we do have an empty HashSet that we'll be working with.
 
     public String getName() {
         return name;
@@ -46,5 +52,13 @@ public class Pet extends BaseEntity {
 
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public Set<Visit> getVisits() {
+        return visits;
+    }
+
+    public void setVisits(Set<Visit> visits) {
+        this.visits = visits;
     }
 }
