@@ -15,3 +15,4 @@ public interface CrudService<T, ID> {
 
     void delete(T object);
 }
+//this Service helps against duplicating the code

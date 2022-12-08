@@ -67,3 +67,4 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         return null;
     }
 }
+//kui extendid siis tuleb kasutada superit e.g super.delete(object)
