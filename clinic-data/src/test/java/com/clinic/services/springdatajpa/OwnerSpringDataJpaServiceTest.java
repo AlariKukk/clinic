@@ -74,11 +74,11 @@ class OwnerSpringDataJpaServiceTest {
 
     @Test
     void save() {
-        Owner ownetToSave = Owner.builder().id(1L).build();
+        Owner ownerToSave = Owner.builder().id(1L).build();
 
         when(ownerRepository.save(any())).thenReturn(returnOwner);
 
-        Owner savedOwner = ownerSpringDataJpaService.save(ownetToSave);
+        Owner savedOwner = ownerSpringDataJpaService.save(ownerToSave);
 
         assertNotNull(savedOwner);
 
